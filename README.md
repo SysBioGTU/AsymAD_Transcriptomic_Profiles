@@ -5,7 +5,7 @@ Asymptomatic Alzheimer’s disease (AsymAD), characterized by Alzheimer's diseas
 
 A flowchart below summarises the analyses and methods used in this study.
 
-[**Methods**](Methods.png)
+![Methods Flowchart](Methods.png)
 
 Due to large file sizes, most of the data files are not provided here. Instead, the title and a brief description of each file included in this repository are provided below.
 
