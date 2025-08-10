@@ -27,11 +27,11 @@ Includes the code for **DEG**, **DET**, and **DUT** analyses.
 
 ### **Comparisons**
 - Contains code for plotting the comparison of significant genes/transcripts from DEG, DET, and DUT analyses across both datasets. <br>
-*Note: Large plot files (tiff) are not included here due to GitHub's file size limit.*
+*(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
 ### **Dot_Plots**
 - Contains scripts for dot plots showing selected enrichment terms for ROSMAP and MSBB separately, based on combined significant genes from DEG, DET, and DUT analyses. <br>
-*Note: Large plot files (tiff) are not included here due to GitHub's file size limit.*
+*(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
 ### **Grouping & Scoring**
 - Genes were scored:  
@@ -40,7 +40,7 @@ Includes the code for **DEG**, **DET**, and **DUT** analyses.
   - **Score 3**: Present in all three analyses  
 - Genes were grouped into 9 categories (possible combinations) and the number of genes in each group was calculated.  
 - Contains scripts of these group distributions. <br>
-*Note: Large plot files (tiff) are not included here due to GitHub's file size limit.*
+*(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
 ### **Box_Plots**
 - Contains scripts for creating box plots for selected genes in DEG, DET, and DUT results.
