@@ -4,9 +4,11 @@
 
 Asymptomatic Alzheimer’s disease (AsymAD), characterized by Alzheimer's disease (AD) pathology in cognitively normal individuals, represents a preclinical stage of AD and offers great potential for early diagnosis and intervention. This study aimed to identify molecular signatures associated with AsymAD and to discover new biomarker candidates. Two different RNA-seq datasets, Religious Orders Study/Memory and Aging Project (ROSMAP) and Mount Sinai Brain Bank (MSBB), were analysed. Individuals in the datasets were grouped into AD and AsymAD based on clinical and neuropathological criteria. Differentially expressed genes (DEGs), differentially expressed transcripts (DETs), and differentially used transcripts (DUTs) were identified between these groups. Significant genes from these three analyses were mapped onto the human protein–protein interaction (PPI) network using the KeyPathwayMiner tool to uncover subnetworks associated with AsymAD. Results were interpreted with enrichment analysis and compared with AD-related and learning-memory-cognition-related gene lists to identify biomarker candidate genes. Additionally, an extra validation step was performed using a mouse dataset. This study presents a comprehensive analysis of the molecular mechanisms of AsymAD with an innovative approach that goes beyond DEGs, incorporating transcript isoform analysis and subnetwork exploration. 
 
+
 A flowchart below summarises the analyses and methods used in this study.
 
 ![Methods Flowchart](Methods.png)
+
 
 Due to large file sizes, most of the data files are not provided here. Instead, the title and a brief description of each file included in this repository are provided below.
 
