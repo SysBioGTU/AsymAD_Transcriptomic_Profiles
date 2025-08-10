@@ -33,7 +33,7 @@ Includes the code for **DEG**, **DET**, and **DUT** analyses.
 - Contains scripts for dot plots showing selected enrichment terms for ROSMAP and MSBB separately, based on combined significant genes from DEG, DET, and DUT analyses. <br>
 *(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
-### **Grouping & Scoring**
+### **Grouping&Scoring**
 - Genes were scored:  
   - **Score 1**: Present in only one analysis (DEG, DET, or DUT)  
   - **Score 2**: Present in two analyses  
