@@ -22,8 +22,8 @@ df <- data.frame(
 
 ggplot(df, aes(x = log10_p_value, y = reorder(term, log10_p_value), size = Count, color = log10_p_value)) +
   geom_point(alpha = 0.8) +
-  scale_color_gradient(low = "red", high = "green", name = "-log10(p-value)") +  # Renk skalası
-  scale_size(range = c(2, 10), name = "Count") +  # Count için boyut skalası
+  scale_color_gradient(low = "red", high = "green", name = "-log10(p-value)") +  # colour scale
+  scale_size(range = c(2, 10), name = "Count") +  # size scale for Count
   theme_minimal() +
   labs(x = "-log10(p-value)", y = "", title = "Dot Plot of Enriched Terms") +
   theme(axis.text.y = element_text(size = 12, face = "bold"),
@@ -58,8 +58,8 @@ df <- data.frame(
 
 ggplot(df, aes(x = log10_p_value, y = reorder(term, log10_p_value), size = Count, color = log10_p_value)) +
   geom_point(alpha = 0.8) +
-  scale_color_gradient(low = "red", high = "green", name = "-log10(p-value)") +  # Renk skalası
-  scale_size(range = c(2, 10), name = "Count") +  # Count için boyut skalası
+  scale_color_gradient(low = "red", high = "green", name = "-log10(p-value)") +  # colour scale
+  scale_size(range = c(2, 10), name = "Count") +  # size scale for Count
   theme_minimal() +
   labs(x = "-log10(p-value)", y = "", title = "Dot Plot of Enriched Terms") +
   theme(axis.text.y = element_text(size = 12, face = "bold"),
