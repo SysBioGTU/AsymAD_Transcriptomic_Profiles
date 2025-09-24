@@ -6,7 +6,8 @@ biogrid_interactions <- read_excel("~/Desktop/biogrid_interactions.xlsx")
 
 target_genes <- read.table("target_genes.txt")
 
-target_genes <- target_genes[[1]]  # ilk sütunu vektör olarak çek
+
+target_genes <- target_genes[[1]]  #Extract the first column as a vector
 
 target_genes <- unique(target_genes)
 
