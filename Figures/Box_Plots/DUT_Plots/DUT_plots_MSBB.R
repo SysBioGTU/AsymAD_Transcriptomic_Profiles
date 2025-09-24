@@ -89,7 +89,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "GNG4_Propotions_AD_vs_AsymAD_MSBB_DUT.tiff"),
+ggsave(filename = file.path(path, "GNG4_Proportions_AD_vs_AsymAD_MSBB_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
@@ -167,7 +167,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "MRPL1_Propotions_AD_vs_AsymAD_MSBB_DUT.tiff"),
+ggsave(filename = file.path(path, "MRPL1_Proportions_AD_vs_AsymAD_MSBB_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
@@ -259,7 +259,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "ADAMTS2_Propotions_AD_vs_AsymAD_MSBB_DUT.tiff"),
+ggsave(filename = file.path(path, "ADAMTS2_Proportions_AD_vs_AsymAD_MSBB_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
@@ -340,7 +340,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "ENPP5_Propotions_AD_vs_AsymAD_MSBB_DUT.tiff"),
+ggsave(filename = file.path(path, "ENPP5_Proportions_AD_vs_AsymAD_MSBB_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
