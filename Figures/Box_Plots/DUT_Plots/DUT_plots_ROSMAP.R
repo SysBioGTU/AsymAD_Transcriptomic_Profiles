@@ -55,7 +55,7 @@ filtered_data_1 <- count_AD_Asym[count_AD_Asym$RowNames %in% transcripts_of_inte
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -RowNames, names_to = "Sample", values_to = "Expression")
 
-# Add group information from col_Data_3
+# Add group information from col_Data_2
 col_Data_2 <- col_Data_2 %>%
   mutate(Sample = col_Data_2$sample_id)
 
@@ -92,7 +92,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "GNG4_Expressions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
+ggsave(filename = file.path(path, "GNG4_Proportions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
@@ -149,7 +149,7 @@ filtered_data_1 <- count_AD_Asym[count_AD_Asym$RowNames %in% transcripts_of_inte
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -RowNames, names_to = "Sample", values_to = "Expression")
 
-# Add group information from col_Data_3
+# Add group information from col_Data_2
 col_Data_2 <- col_Data_2 %>%
   mutate(Sample = col_Data_2$sample_id)
 
@@ -187,9 +187,10 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "MRPL1_Expressions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
+ggsave(filename = file.path(path, "MRPL1_Proportions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
+
 
 
 
@@ -203,7 +204,6 @@ x <- rownames(fitteddata)
 transcripts_of_interest %in% x
 
 
-enst_889.1 <- combined_count_data_out["ENST00000698889.1",] # bu NA veriyo
 
 enst_937.1 <- combined_count_data_out["ENST00000522937.1",]
 
@@ -236,7 +236,7 @@ filtered_data_1 <- count_AD_Asym[count_AD_Asym$RowNames %in% transcripts_of_inte
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -RowNames, names_to = "Sample", values_to = "Expression")
 
-# Add group information from col_Data_3
+# Add group information from col_Data_2
 col_Data_2 <- col_Data_2 %>%
   mutate(Sample = col_Data_2$sample_id)
 
@@ -274,7 +274,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "ADAMTS2_Expressions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
+ggsave(filename = file.path(path, "ADAMTS2_Proportions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
@@ -320,7 +320,7 @@ filtered_data_1 <- count_AD_Asym[count_AD_Asym$RowNames %in% transcripts_of_inte
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -RowNames, names_to = "Sample", values_to = "Expression")
 
-# Add group information from col_Data_3
+# Add group information from col_Data_2
 col_Data_2 <- col_Data_2 %>%
   mutate(Sample = col_Data_2$sample_id)
 
@@ -357,7 +357,7 @@ ggplot(long_data_1, aes(x = group, y = Expression, color = group, shape = group,
 
 path <- "H:/plots_last/DUT_plots"
 
-ggsave(filename = file.path(path, "ENPP5_Expressions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
+ggsave(filename = file.path(path, "ENPP5_Proportions_AD_vs_AsymAD_ROSMAP_DUT.tiff"),
        plot = last_plot(),
        width = 9, height = 7, device = "tiff", dpi = 600)
 
