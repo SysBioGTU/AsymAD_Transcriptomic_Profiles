@@ -19,7 +19,6 @@ col_Data_3 <- col_Data_out[ c(183:485), ]
 
 
 
-
 # Filter data
 filtered_data_1 <- count_AD_Asym[rownames(count_AD_Asym) %in% gene_of_interest, ]
 
@@ -32,16 +31,12 @@ filtered_data_1 <- filtered_data_1 %>%
 
 filtered_data_1 <- as.data.frame(filtered_data_1)
 
-library(dplyr)
-
-library(tidyr)
-
 
 # Reshape the data to long format for ggplot2
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -Sample, names_to = "sample_id", values_to = "Expression")
 
-# Join long_data_GABARAPL2 with col_Data_3 to get the group information
+# Join long_data_1 with col_Data_3 to get the group information
 long_data_1 <- long_data_1 %>%
   left_join(col_Data_3, by = "sample_id")
 
@@ -107,16 +102,13 @@ filtered_data_1 <- filtered_data_1 %>%
 
 filtered_data_1 <- as.data.frame(filtered_data_1)
 
-library(dplyr)
-
-library(tidyr)
 
 
 # Reshape the data to long format for ggplot2
 long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -Sample, names_to = "sample_id", values_to = "Expression")
 
-# Join long_data_GABARAPL2 with col_Data_3 to get the group information
+# Join long_data_1 with col_Data_3 to get the group information
 long_data_1 <- long_data_1 %>%
   left_join(col_Data_3, by = "sample_id")
 
@@ -155,46 +147,33 @@ ggsave(filename = file.path(path, "MRPL1_Expressions_AD_vs_AsymAD_ROSMAP.tiff"),
 
 
 
-# Gene: ADAMTS2 ENSG00000087116
-
-gene_of_interest <- "ENSG00000087116" 
-
-
-# AD vs AsymAD countdata
-
-count_AD_Asym <- fitteddata[, c(183:485)]
-
-col_Data_3 <- col_Data_out[ c(183:485), ]
-
-
 
 # Filter data
+filtered_data_1 <- count_AD_Asym[rownames(count_AD_Asym) %in% gene_of_interest, ]
 
-filtered_data_2 <- count_AD_Asym[rownames(count_AD_Asym) %in% gene_of_interest, ]
-
-filtered_data_2 <- as.data.frame(filtered_data_2)
-
+filtered_data_1 <- as.data.frame(filtered_data_1)
 
 
-filtered_data_2 <- filtered_data_2 %>%
-  rownames_to_column(var = "Sample") 
 
-filtered_data_2 <- as.data.frame(filtered_data_2)
+filtered_data_1 <- filtered_data_1 %>%
+  rownames_to_column(var = "Sample")  
 
+filtered_data_1 <- as.data.frame(filtered_data_1)
 
 
 
 # Reshape the data to long format for ggplot2
-long_data_2 <- filtered_data_2 %>%
+long_data_1 <- filtered_data_1 %>%
   pivot_longer(cols = -Sample, names_to = "sample_id", values_to = "Expression")
 
-long_data_2 <- long_data_2 %>%
+# Join long_data_1 with col_Data_3 to get the group information
+long_data_1 <- long_data_1 %>%
   left_join(col_Data_3, by = "sample_id")
 
 
 
 # Create the plot
-ggplot(long_data_2, aes(x = group, y = Expression, color = group, fill = group, shape = group)) +
+ggplot(long_data_1, aes(x = group, y = Expression, color = group, fill = group, shape = group)) +
   geom_boxplot(alpha = 0.3, outlier.shape = NA, position = position_dodge(width = 0.75)) +
   geom_jitter(size = 2, alpha = 0.7, position = position_jitter(width = 0.2, height = 0)) +
   theme_minimal() +
