@@ -212,13 +212,14 @@ fitteddata_with_rownames <- data.frame(RowNames = row.names(fitteddata_2), fitte
 
 count_AD_Asym <- fitteddata_with_rownames[, c(1, 184:486)]
 
+col_Data_2 <- col_Data_out[ 183:485, ]
+
 
 # Filter data
 
 filtered_data_1 <- count_AD_Asym[count_AD_Asym$RowNames %in% transcripts_of_interest, ]
 
 
-library(tidyverse)
 
 # Reshape the data to long format for ggplot2
 long_data_1 <- filtered_data_1 %>%
