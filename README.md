@@ -18,7 +18,7 @@ Contains the code for pseudo-alignment of preprocessed fastq files to the GRCh38
 
 ---
 
-## 📁 Differential_Analyses
+## 📁 Differential Analyses
 Includes the code for **DEG**, **DET**, and **DUT** analyses.  
 - Expression quantification at both the gene and transcript level was performed using **tximport** (v1.30.0).  
 - Contains separate scripts for DEG, DET, and DUT analysis.
@@ -31,11 +31,11 @@ Includes the code for **DEG**, **DET**, and **DUT** analyses.
 - Contains code for plotting the comparison of significant genes/transcripts from DEG, DET, and DUT analyses across both datasets. <br>
 *(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
-### **Dot_Plots**
+### **Dot Plots**
 - Contains scripts for dot plots showing selected enrichment terms for ROSMAP and MSBB separately, based on combined significant genes from DEG, DET, and DUT analyses. <br>
 *(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
-### **Grouping&Scoring**
+### **Grouping & Scoring**
 - Genes were scored:  
   - **Score 1**: Present in only one analysis (DEG, DET, or DUT)  
   - **Score 2**: Present in two analyses  
@@ -44,18 +44,18 @@ Includes the code for **DEG**, **DET**, and **DUT** analyses.
 - Contains scripts of these group distributions. <br>
 *(Note: Large plot files (tiff) are not included here due to GitHub's file size limit.)*
 
-### **Box_Plots**
+### **Box Plots**
 - Contains scripts for creating box plots for selected genes in DEG, DET, and DUT results.
 
 ---
 
-## 📁 KPM_230
+## 📁 KPM 230
 - Contains the code for subnetwork analysis using **KeyPathwayMiner** (v4.0) on the human PPI network (BioGRID Release 4.4.236, human-human interactions) to identify subnetworks involving scored candidate genes.
 - **Attributes** folder contains group assignment scripts for visualisation purposes.
 
 ---
 
-## 📁 Mouse_Analysis
+## 📁 Mouse Analysis
 - Analyzes interactions between important genes from `genelist_185` and differentially expressed mouse genes from the `target_genes` list using the PPI data.
 - Reports the number of interactions and the number of unique interacting genes.
 
